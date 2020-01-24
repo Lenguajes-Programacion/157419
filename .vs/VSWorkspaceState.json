@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\class1"
+    "\\class1",
+    "\\class1\\Practica_uno"
   ],
-  "SelectedNode": "\\class1\\.gitkeep",
+  "SelectedNode": "\\class1\\Practica_uno\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
