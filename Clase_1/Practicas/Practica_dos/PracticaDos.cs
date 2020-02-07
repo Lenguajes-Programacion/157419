@@ -8,6 +8,10 @@ namespace PracticaDos
 
         static void Main(string[] args)
         {
+            string value1 = "";
+            string value2 = "";
+            int result = 0;
+
             switch (args[1])
             {
                 case "+":
