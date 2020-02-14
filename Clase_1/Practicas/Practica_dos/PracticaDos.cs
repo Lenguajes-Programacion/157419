@@ -10,7 +10,6 @@ namespace PracticaDos
         {
             
             Console.WriteLine("---------Calculadora--------\n");
-            too1
 
             bool close app = true;
             int value1 = 0;
@@ -18,10 +17,10 @@ namespace PracticaDos
             int result = 0;
             float result = 0;
 
-            while (!close_app)
+            while (close_app)
             {
                 Console.WriteLine("Elije que operacion deseas realizar:\n");
-                Console.WriteLine("EPulsa + para sumar \n");
+                Console.WriteLine("Pulsa + para sumar \n");
                 Console.WriteLine("Pulsa - para restar \n");
                 Console.WriteLine("Pulsa x para multiplicar \n");
                 Console.WriteLine("Pulsa / para dividir \n");
@@ -37,6 +36,10 @@ namespace PracticaDos
                         value1 = int.Parse(Console.ReadLine());
                         Console.WriteLine("A continuacion ingresa el segundo valor: \n ");
                         value2 = int.Parse(Console.ReadLine());
+                        result = Calculus.suma(value1,value2);
+                        Console.WriteLine("El valor de tu resultado es: {0} \n ", result)
+                        Console.WriteLine("Si deseas realizar otra operacion pulsa 1 \n ");
+                        Console.WriteLine("Para salir del programa pulsa 2 \n ");
                         break;
 
                     case "-":
@@ -45,6 +48,10 @@ namespace PracticaDos
                         value1 = int.Parse(Console.ReadLine());
                         Console.WriteLine("A continuacion ingresa el segundo valor: \n ");
                         value2 = int.Parse(Console.ReadLine());
+                        result = Calculus.suma(value1,value2);
+                        Console.WriteLine("El valor de tu resultado es: {0} \n ", result);
+                        Console.WriteLine("Si deseas realizar otra operacion pulsa 1 \n ");
+                        Console.WriteLine("Para salir del programa pulsa 2 \n ");
                         break;
 
                     case "x":
@@ -53,6 +60,10 @@ namespace PracticaDos
                         value1 = int.Parse(Console.ReadLine());
                         Console.WriteLine("A continuacion ingresa el segundo valor: \n ");
                         value2 = int.Parse(Console.ReadLine());
+                        result = Calculus.suma(value1,value2);
+                        Console.WriteLine("El valor de tu resultado es: {0} \n ", result);
+                        Console.WriteLine("Si deseas realizar otra operacion pulsa 1 \n ");
+                        Console.WriteLine("Para salir del programa pulsa 2 \n ");
                         break;
 
                     case "/":
@@ -61,6 +72,16 @@ namespace PracticaDos
                         value1 = int.Parse(Console.ReadLine());
                         Console.WriteLine("A continuacion ingresa el segundo valor: \n ");
                         value2 = int.Parse(Console.ReadLine());
+                        result = Calculus.divide(value1,value2);
+                        Console.WriteLine("El valor de tu resultado es: {0} \n ", result);
+                        Console.WriteLine("Si deseas realizar otra operacion pulsa 1 \n ");
+                        Console.WriteLine("Para salir del programa pulsa 2 \n ");
+                        break;
+
+                    case "r":
+                        Console.WriteLine("Si deseas realizar otra operacion pulsa 1 \n ");
+                        Console.WriteLine("A continuacion ingresa el primer valor: \n ");
+                        
                         break;
 
                     case "s":
@@ -78,4 +99,8 @@ namespace PracticaDos
         }
 
     }
+
+    class static 
+
+
 }
