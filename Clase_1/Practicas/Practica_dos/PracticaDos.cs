@@ -100,7 +100,33 @@ namespace PracticaDos
 
     }
 
-    class static 
+    class Calculus
+    {
+        public static int suma(int valor1, int valor2)
+        {
+            int result = 0;
+            result = valor1 + valor2;
+            return result;
+        }
+        public static int resta(int valor1, int valor2)
+        {
+            int result = 0;
+            result = valor1 - valor2;
+            return result;
+        }
+        public static int multi(int valor1, int valor2)
+        {
+            int result = 0;
+            result = valor1 * valor2;
+            return result;
+        }
+        public static int division(int valor1, int valor2)
+        {
+            int result = 0;
+            result = valor1 / valor2;
+            return result;
+        }
+    }
 
 
 }
