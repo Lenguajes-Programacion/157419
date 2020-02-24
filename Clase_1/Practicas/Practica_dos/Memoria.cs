@@ -1,5 +1,5 @@
+using Newtonsoft.Json.Linq;
 using System;
-using System Newtonsoft.Json.Ling;
 using System.IO;
 using System.Collections.Generic;
 using System.Text;
@@ -23,8 +23,8 @@ namespace PracticaDos
             foreach((var key, var item) in dbObject)
             {
                 Console.WriteLine("Dato en memoria:");
-                MemoryData memoriaData = new MemoryData(DateTime.Now, item["operacion"].ToString(), (int) item["resultado"]);
-                Console.WriteLine(key.ToString());
+                MemoryData memoriaData = new MemoryData(DateTime.Now, item.Value["operacion"].ToString(), (int) item.Value["resultado"]);
+                Console.WriteLine(item.Key.ToString());
                 Console.WriteLine(memoriaData.resultado.ToString());
             }
         }        
